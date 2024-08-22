@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="1">-->
+    <title>CPU Blog</title>
+    <link rel="icon" type="image/jpg" href="img/Cpu.jpg"></link>
+    <link rel="stylesheet" href="cpublog.css">
+</head>
+<body>
+    <div class="login" id="login-page">
+        <img src="img/logoblog.png">
+        <input id="login-name" placeholder="Name">
+        <input id="login-title" placeholder="Title">
+        <input type="password" id="login-password" placeholder="Password">
+        <button id="login-button" onclick="login()">Login</button>
+    </div>
+    <div class="page" id="main-page">
+        <div class="staff">
+            <div class="staff-title">
+                <img src="img/logoblog.png" alt="Isimm Logo">
+            </div>
+            <div class="staff-search" alt="Search">
+                <input placeholder="Find a member">
+                <img src="img/search-icon.png">
+            </div>
+            <div class="staff-members">
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Koussay Attaya</div>
+                        <div class="member-title">Président</div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Yosra Ghanmi</div>
+                        <div class="member-title">Vice Président</div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Selma Soued</div>
+                        <div class="member-title">Secrétaire Générale</div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Mazen Toraa</div>
+                        <div class="member-title">Responsable Formations et Projets Développement</div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Asma Sebai</div>
+                        <div class="member-title">Assistante Développement</div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="member-img" src="img/user.png">
+                    <div class="member-info">
+                        <div class="member-name">Safouene Ziadi</div>
+                        <div class="member-title">Assistant Développement</div>
+                    </div>
+                </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Aziz Harzallah</div>
+                            <div class="member-title">Responsable Formations et Projets Robotique</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Ghayeth Radhoueni</div>
+                            <div class="member-title">Assistant Robotique</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Souha Tekaya</div>
+                            <div class="member-title">Assistante Robotique</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Mouhib Ghanmi</div>
+                            <div class="member-title">Chef de Comité Fighter</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Khadija Elloumi</div>
+                            <div class="member-title">Chef de Comité Junior</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Jawhar Ben Soussia</div>
+                            <div class="member-title">Chef de Comité Tout Terrain</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Najeh Zroud</div>
+                            <div class="member-title">Chef de Comité Autonome</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Ahmed Merchaoui</div>
+                            <div class="member-title">Chef de Comité Design</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Nour El Houda Ayechi</div>
+                            <div class="member-title">Chef de Comité Logistique</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Yassine Medhioub</div>
+                            <div class="member-title">Chef de Comité Sponsoring</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Ranim Radhouani</div>
+                            <div class="member-title">Chef de Comité Affaires Externes</div>
+                        </div>
+                    </div>
+                    <div class="staff-member">
+                        <img class="member-img" src="img/user.png">
+                        <div class="member-info">
+                            <div class="member-name">Tesnime Zroud</div>
+                            <div class="member-title">Chef de Comité Media</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="main">
+            <div class="posts">
+                <div class="add-post">
+                    <img class="member-img" src="img/Cpu.png">
+                    <input id="add-post" placeholder="What's on your mind, CPU member?">
+                    <button class="post-button" onclick="post()">Post</button>
+                </div>
+                <div class="post" id="hidden-post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Koussay Attaya</div>
+                                <div class="member-title">Président</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Koussay Attaya</div>
+                                <div class="member-title">Président</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Mazen Toraa</div>
+                                <div class="member-title">Responsable Formations et Projets Développement</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Aziz Harzallah</div>
+                                <div class="member-title">Responsable Formations et Projets Robotique</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Yosra Ghanmi</div>
+                                <div class="member-title">Vice President</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/user.png">
+                            <div class="member-info">
+                                <div class="member-name">Selma Soued</div>
+                                <div class="member-title">Secrétaire Générale</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content">Consectetur adipisicing elit. Assumenda asperiores suscipit saepe! Doloribus alias nulla exercitationem deserunt officia recusandae doloremque, sed aliquam ipsa et voluptatum, in quaerat tenetur explicabo beatae.</div>
+                    <div class="post-likes"><span class="nb-likes">0</span> Likes, <span class="nb-comments">0</span> comments</div>
+                    <div class="post-interaction">
+                        <div class="like-button">
+                            <img src="img/like.png">Like
+                        </div>
+                        <div class="comment-button">
+                            <img src="img/comment.png">Comment
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="list"></div>
+                        <input class="post-comment-out" placeholder="Write your comment here">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="post" id="cyberbot">
+                <div class="post-header">
+                    <div class="staff-member">
+                        <img class="member-img" src="img/Cpu.png">
+                        <div class="member-info">
+                            <div class="member-name">ISIMM CYBERBOT 4.0</div>
+                            <div class="member-title">24/04/2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Journée d'intégration</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Formation Dev</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Formation Robotique</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Compétition ENSI</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Hackathon EPI</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="staff-member">
+                            <img class="member-img" src="img/Cpu.png">
+                            <div class="member-info">
+                                <div class="member-name">Compétition ENISO</div>
+                                <div class="member-title">24/04/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <script src="cpublog.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/Outfit.ttf') format('truetype');
+    font-weight: normal;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../fonts/Tangerine/Tangerine-Regular.ttf') format('truetype');
+    font-weight: normal;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MerriweatherSans';
+    src: url('../fonts/Merriweather_Sans/MerriweatherSans.ttf') format('truetype');
+    font-weight: normal;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost/Jost-Medium.ttf') format('truetype');
+    font-weight:500;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost/Jost-Bold.ttf') format('truetype');
+    font-weight: 700;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('../fonts/Spartan/Spartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    line-height: 150%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('../fonts/Spartan/Spartan-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('../fonts/Spartan/Spartan-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    line-height: 150%;
+}
+div{
+    border: px solid;
+}
+body{
+    background-color: #f3efef;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.login > img{
+    height: 8rem;
+    width: auto;
+}
+.login > input{
+    min-height: 2.5rem;
+    width: 20%;
+    border: 1px solid #888;
+    border-radius: 10px;
+    margin: 0.2rem 0;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+}
+.login > button{
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.1rem;
+    background-color: rgb(0, 102, 255); 
+    border-radius: 15px;
+    font-family: "Roboto";
+    cursor: pointer;
+    margin: 1rem 0;
+    color: white;
+    border: none;
+}
+.login > button:hover{
+    background-color: rgb(0, 60, 255);
+}
+.page{
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    padding: 0 1rem;
+}
+.staff-title, .main-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+.staff-title > img, .main-title > img{
+    width: 12rem;
+    height: auto;
+    margin: 0 1rem 0 -1rem;
+}
+.staff-title, .main-title{
+    font-family: "Spartan";
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.staff-search{
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.staff-search > input{
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    background-color: #ddd;
+    height: 2rem;
+}
+.staff-search > img{
+    cursor: pointer;
+    height: 1.4rem;
+}
+.staff-members{
+    overflow-y: scroll;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.staff-members::-webkit-scrollbar, .events::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.staff-members::-webkit-scrollbar-track, .events::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.staff-members::-webkit-scrollbar-thumb, .events::-webkit-scrollbar-thumb {
+    border-radius: 10px; 
+    border: 3px solid transparent; 
+    background-clip: content-box;
+}
+.staff-members:hover::-webkit-scrollbar-thumb, .events:hover::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.staff-member{
+    display: flex;
+}
+.staff .staff-member{
+    display: flex;
+    padding: 0.5rem 0;
+}
+.staff .staff-member:hover{
+    background-color: #ddd;
+}
+.member-img{
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+.member-name{
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.member-title, .post-likes{
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    color: #444;
+}
+.main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.posts{
+    margin: 6rem 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.add-post{
+    display: flex;
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.add-post > img{
+    margin: 0.5rem;
+}
+.add-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.add-post > button{
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(55, 135, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.add-post input{
+    width: 70%;
+    height: 2rem;
+    font-family: "Roboto";
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding-left: 8px;
+    background-color: #fff;
+    background-color: #eee  ;
+}
+#hidden-post{
+    display: none;
+}
+.post{
+    padding: 1.5rem;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.post-content{
+    padding: 1rem 0;
+    font-family: 'Roboto';
+    padding: 1rem 0;
+}
+.post-interaction{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px #999 solid;
+    border-top: 1px #999 solid;
+    padding: 0.3rem 0;
+}
+.like-button, .comment-button{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.like-button > img{
+    width: 1.3rem;
+    margin: -2px 5px 0 0;
+}
+.comment-button > img{
+    width: 1.1rem;
+    margin: -2px 5px 0 0;
+}
+.list{
+    margin: 1rem 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 13rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.list::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+.list:hover::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.list:hover::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.comment{
+    min-height: 2.5rem;
+    min-height: fit-content;
+    padding: 8px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    text-wrap: wrap;
+}
+.comment:hover{
+    background-color: #eee;
+}
+.comment img{
+    width: 2rem;
+    height: 2rem;
+}
+.comment div[class="member-name"]{
+    font-size: 0.9rem;
+}
+.comment div[class="member-title"]{
+    white-space: normal; 
+    min-height: fit-content;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.post-comment-out{
+    margin-top: 5px;
+    min-height: 2rem;
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding-left: 8px;
+}
+.calendar{
+    position: fixed;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    right: 0;
+    top: 6.5rem;
+    bottom: 0;
+}
+.events{
+    overflow-y: scroll;
+    margin: 0rem -1rem 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.events > .post:hover{
+    background-color: #ddd;
+}
+#cyberbot{
+    background-color: rgb(255, 196, 0);
+    width: 80%;
+}
