@@ -1,0 +1,10 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "/cpublog.html" }],
+    "builds": [
+      {
+        "src": "cpublog.html",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  
